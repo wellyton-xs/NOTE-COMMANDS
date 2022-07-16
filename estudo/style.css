@@ -1,0 +1,42 @@
+@tailwind base;
+
+body {
+  background-color: #e8ffff;
+  color: #213e3b;
+}
+
+h1 {
+  color: #14274e;
+}
+
+h3 {
+  color: #7579e7;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #010101;
+      color: #f0ece2;
+    }
+  
+    h1 {
+      color: #7579e7;
+    }
+  
+    h3 {
+      color: #69779b;
+    }
+  
+    img {
+      filter: brightness(0.9);
+    }
+  
+  }
+  
+  @tailwind components;
+  
+  @tailwind utilities;
+
+  img {
+    filter: brightness(0.9);
+  }
