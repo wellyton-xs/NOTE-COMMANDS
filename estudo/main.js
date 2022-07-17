@@ -227,3 +227,61 @@ operationalSystems.forEach(function(oP, index){
     console.log(index)
     console.log(oP)
 })
+
+console.log('LOOP WHILE')
+
+let i = 0;
+
+while (i < 10) {
+    console.log('index é menor que 10!')
+    i++
+}
+
+// você deve utilizar o i++ pois caso ele não esteja ali pode ser que seu código rode infinitamente.
+// pois quando escrevemos o código declaramos que i é igual a 0 então ele não está sendo somado toda vez que o loop é executado.
+// o que esse i++ faz é exatamente isso, podemos escrever ele de três formas
+// como fizemos acima, i++ como também i += 1 ou i = i + 1 
+// são formas diferentes de se fazer a mesma coisa, por isso eu prefiro optar pela mais simples i++
+
+const isNotMetalGear = {
+    name: "armstrong",
+    age: 82
+}
+
+// o for é um laço pouco performático mas dá pra usar para acessar as propriedades de um objeto.
+for (property in isNotMetalGear) {
+    console.log(isNotMetalGear[property])
+}
+
+const sum = 1 + 1
+
+//relembrando que o "===" se importa com o tipo do dado enquanto o "==" não. se atente a esses detalhes pois é muito importante discernir essas coisas
+if (sum === 2) {
+    console.log('sum is 2!')
+} else if (sum === 3) {
+    console.log('sum is 3!')
+}
+else{
+    console.log('sum is not 2')
+}
+
+/*
+agora iremos trabalhar os operadores lógicos e relacionais, que para as estruturas condicionais são muito importantes.
+eles podem parecer bem familiares já que também são utilizados na matemática.
+
+    operadores relacionais:
+        "==" igual a
+        "!=" diferente de
+        ">" maior que
+        "<" menor que
+        ">=" maior ou igual a
+        "<=" menor ou igual a
+    
+    operadores lógicos:
+        && and
+        || or
+
+    talvez os lógicos tenham ficado um pouco confusos, já que são algo novo, mas calma que não é tão complicado assim.
+    
+        
+*/
