@@ -2,12 +2,34 @@
 /**
  neste documento estão vários métodos, comandos e conceitos do javascript todos comentados para que eu possa revisar meus estudos.
  porém uma coisa que pretendo é disponibilizar este código no github para que novatos como eu possam utilizar para revisar.
- deixarei também em uma página HTML algumas explicações sobre como estudar com eficiência cada tópico e também os materiais que usei para escreve-lo 
+ deixarei também em uma página HTML algumas explicações sobre como estudar com eficiência cada tópico,
+ e também os materiais que usei para escreve-lo 
  como bônus ainda deixarei material que eu postarei no youtube usando esse documento como base.
  para mais detalhes leia o README.MD
+
+ AVISOS IMPORTANTES
+    · durante o documento você verá vários console.log('') com alguma mensagem escrita neles, eles foram uma estratégia para se localizar 
+      dentro do console do projeto o.
+      se você não souber o que ele é fique tranquilo que será explicado durante sua passagem no documento.
  */
 
 // PUXANDO VALORES E DESCOBRINDO SEU NÚMERO DE CARACTERES
+
+/* CONSOLE:
+
+para começo de conversa o console é uma das ferramentas mais importantes para o iniciante e uma maneira de vermos o que 
+está acontecendo com a nossa aplicação.
+
+mas onde tenho acesso ao console? é bem simples, se você for em qualquer site da web
+você pode apertar a tecla de atalho do seu navegador
+no firefox é ctrl + shift + i e mágicamente abre o dev tools, se acostume com essa maravilha do mundo web.
+nela você pode acessar o console e ver todos os dados que estão sendo exibidos nele.
+
+outra maneira de acessar os outputs (saídas) é rodando o arquivo no terminal do seu editor de código ou o terminal do seu sistema, para fazer isso eu rodo os arquivos javascript (JS) com node.js 
+não se incomode em saber o que é agora, só saiba que ele existe e que é possivel rodar arquivos javascript fora do navegador com eles.
+
+uma coisa muito comum é o console.log() onde o log é o comando para fazer com que o console escreva algo na saída de dados.
+*/
 console.log('EXIBINDO UMA MENSAGEM COM CONSOLE.LOG E NÚMERO DE CARACTERES')
 const message = 'hello world'
 console.log(message, message.length)
@@ -282,6 +304,26 @@ eles podem parecer bem familiares já que também são utilizados na matemática
         || or
 
     talvez os lógicos tenham ficado um pouco confusos, já que são algo novo, mas calma que não é tão complicado assim.
-    
+    vamos ver um exemplo prático, começando pelo AND
+    imagine que em uma pizzaria é necessário duas condições básicas para a pizza seja entregue.
+        - entregador disponível
+        - pizzaiolo não estar doente (disponível também, na minha mente essa quebra seria engraçada)
+
+    logo, se o entregador não estiver disponível não terá ninguém para entregar a pizza
+    o mesmo para o pizzaiolo, já que não teria quem fizesse elas.
+    o que o AND faz é justamente verificar se essas duas condições estão disponíveis para que ele entregue a pizza.
+    agora bora pro código pra ficar mais claro.
         
 */
+
+const pizzaiolo = 'disponível'
+const entregador = 'disponíveljkhttedgdtyjfgyiuggdfw'
+
+if (pizzaiolo && entregador === 'disponível') {
+    console.log('pizza entregue')
+} else {
+    console.log('ocorreu problemas na entrega, procedimento abortado.')
+}
+
+//note que se você modificar o valor para indisponível ou qualquer outra coisa dará errado.
+//por isso adicionamos o else para exibir uma mensagem de erro.
